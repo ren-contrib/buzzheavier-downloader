@@ -7,7 +7,8 @@ from tqdm import tqdm
 VALID_DOMAINS = [
     'buzzheavier.com',
     'bzzhr.co',
-    'fuckingfast.net'
+    'fuckingfast.net',
+    'fuckingfast.co'
 ]
 
 def resolve_url(input_str):
