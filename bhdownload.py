@@ -45,7 +45,7 @@ def download_buzzheavier(input_str):
     print(f"[DEBUG] Download link: {hx_redirect}")
 
     domain = url.split('/')[2]
-    final_url = f'https://{domain}' + hx_redirect
+    final_url = f'https://{domain}' + hx_redirect if hx_redirect.startswith('/dl/') else hx_redirect
     file_response = requests.get(final_url, stream=True)
     file_response.raise_for_status()
 
